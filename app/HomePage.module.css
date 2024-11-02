@@ -1,0 +1,104 @@
+/* HomePage.module.css */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+  gap: 120px; /* Space between name and resume */
+  color: #e0e0e0; /* Muted text color */
+  background-color: #1a1a1a; /* Dark gray background for a softer contrast */
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-right: 100px;
+}
+
+.contactInfo {
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #b0b0b0; /* Muted gray for contact info */
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.rightSection h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #e0e0e0; /* Light gray for timeline header */
+}
+
+.timeline {
+  border-left: 2px solid #3a3a3a; /* Muted gray for timeline line */
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: center; /* Center vertically */
+  margin-bottom: 30px; /* More space between items */
+  position: relative;
+}
+
+.date {
+  font-weight: bold;
+  color: #7a7a7a; /* Soft gray for dates */
+  width: 100px;
+  margin-right: 20px;
+  text-align: right;
+  flex-shrink: 0;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center text vertically */
+}
+
+.timelineContent {
+  background: #2e2e2e; /* Dark gray for content box */
+  padding: 10px 15px;
+  border-radius: 8px;
+  max-width: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  color: #d0d0d0; /* Light gray for text */
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  color: #c0c0c0; /* Muted gray for skills */
+}
+
+.socialLinks {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialLinks a {
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.socialLinks a:hover {
+  text-decoration: underline;
+}
